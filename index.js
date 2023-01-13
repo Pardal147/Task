@@ -1,22 +1,13 @@
 
 let textinput = document.getElementById('textValue')
 
-textinput.addEventListener('keydown',(teclado)=>{
+textinput.addEventListener('keypress',(teclado)=>{
+    // let lugar = document.getElementById('lugar')
 
-    let textValue = document.getElementById('textValue').value
-    let array = [textValue]
-    let lugar = document.getElementById('lugar')
-
-    if(teclado.keyCode === 13){
-        for(key in array){
-            lugar.innerText += array[key]    
-        }
+    if(textinput.value !== undefined && teclado.keyCode === 13){ 
+        lugar.innerHTML += textinput.value
+        console.log(textinput.value)
+        textinput.value = ''
     }
 })
-
-
-
-
-
-
 
