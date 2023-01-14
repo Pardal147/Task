@@ -58,7 +58,7 @@ inputBtn.onclick=()=>{
         textinput.focus()
         li.textContent = textinput.value // valor do input
         lu.appendChild(li) //li dentro do lu
-    
+        console.log(textinput.value)
         checkBox.setAttribute("type","checkbox") // dando um type e o valor type ta recebendo
         li.appendChild(checkBox) // checkBox dentro do lu ou li n sei qual botar
     
