@@ -51,31 +51,31 @@ textinput.addEventListener('keypress',(teclado)=>{
     }
 }) 
 
-// inputBtn.onclick=()=>{
+inputBtn.onclick=()=>{
 
-//     let li = document.createElement('li')
-//     let btn = document.createElement('button')
-//     let checkBox = document.createElement('input')
+    let li = document.createElement('li')
+    let btn = document.createElement('button')
+    let checkBox = document.createElement('input')
 
-//     if(textinput.value === ""){
-//         document.getElementById('null').innerHTML = 'Adicione algo a lista'
-//     }
-//     else{ 
+    if(textinput.value === ""){
+        document.getElementById('null').innerHTML = 'Adicione algo a lista'
+    }
+    else{ 
 
-//         textinput.focus()
-//         li.textContent = textinput.value // valor do input
-//         lu.appendChild(li) //li dentro do lu
-//         checkBox.setAttribute("type","checkbox") // dando um type e o valor type ta recebendo
-//         li.appendChild(checkBox) // checkBox dentro do lu ou li n sei qual botar
+        textinput.focus()
+        li.textContent = textinput.value // valor do input
+        lu.appendChild(li) //li dentro do lu
+        checkBox.setAttribute("type","checkbox") // dando um type e o valor type ta recebendo
+        li.appendChild(checkBox) // checkBox dentro do lu ou li n sei qual botar
     
-//         btn.textContent = '-' //texto dentro do botao
-//         li.appendChild(btn) //botar button dentro do li que foi criado
+        btn.textContent = '-' //texto dentro do botao
+        li.appendChild(btn) //botar button dentro do li que foi criado
     
-//         document.getElementById('null').innerHTML = ''
-//         textinput.value = '' //limpar o input
-//     }
-//     btn.onclick = () =>{
-//         lu.removeChild(li)
-//     }
-// }
+        document.getElementById('null').innerHTML = ''
+        textinput.value = '' //limpar o input
+    }
+    btn.onclick = () =>{
+        lu.removeChild(li)
+    }
+}
 
